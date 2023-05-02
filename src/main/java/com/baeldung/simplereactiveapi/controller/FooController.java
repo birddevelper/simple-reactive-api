@@ -18,7 +18,7 @@ public class FooController {
 	@Autowired
 	private FooService fooService;
 	
-	// This endpoint emits a new Foo as JSON object every second
+	// This endpoint emits a new Foo as JSON object every 1 second
     @GetMapping(value = "/foo")
     public Flux<Foo> getFoo() {
     	
